@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="confetti-canvas" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:-1;"></canvas>
+  <!-- Intro -->
+  <section class="intro">
+    <h1>🎉 Happy Birthday, My Love 🎉</h1>
+    <p>Today is all about you 💖</p>
+    
+    <!-- Music Player (moved up here) -->
+    <section class="music">
+  <h2>🎶 A Song for You</h2>
+  
+  <div class="player">
+    <button id="playPause">▶️</button>
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+      <div class="progress-dot"></div>
+    </div>
+    <span id="timeDisplay">0:00 / 0:00</span>
+  </div>
+  
+  <!-- Song Selector Box -->
+  <div class="song-selector">
+    <label for="songChoice">🎵 Choose a song:</label>
+    <select id="songChoice">
+      <option value="bday.mp3">Happy Birthday</option>
+      <option value="palagi.mp3">Palagi</option>
+      <option value="nothing.mp3">Nothing's Gonna Stop us now</option>
+      <option value="14.mp3">14</option>
+      <option value="saksianglangit.mp3">Saksi ang Langit</option>
+      <option value="thoseeyes.mp3">Those Eyes</option>
+    </select>
+  </div>
+  
+  <audio id="audio" src="bday.mp3"></audio>
+</section>
+
+
+  <!-- Photo Slider -->
+  <section class="slider">
+    <button class="prev">⟨</button>
+    <div class="slides">
+      <img src="img1.jpg" alt="Memory 1">
+      <img src="img2.jpg" alt="Memory 2">
+      <img src="img3.jpg" alt="Memory 3">
+      <img src="img4.jpg" alt="Memory 4">
+      <img src="img5.jpg" alt="Memory 5">
+      <img src="img6.jpg" alt="Memory 6">
+      <img src="img7.jpg" alt="Memory 7">
+      <img src="img8.jpg" alt="Memory 8">
+      <img src="img9.jpg" alt="Memory 9">
+      <img src="img10.jpg" alt="Memory 10">
+      <img src="img11.jpg" alt="Memory 11">
+      <img src="img12.jpg" alt="Memory 12">
+    </div>
+    <button class="next">⟩</button>
+  </section>
+
+  
+  <!-- Letter -->
+<section class="letter">
+  <h2>💌 A Letter for You</h2>
+
+  <!-- ADD THIS BUTTON HERE -->
+  <button id="show-letter-btn">Would you like to read the letter prepared for you? 💌</button>
+
+  <div class="letter-box">
+    <span id="typed-text"></span>
+    <span class="cursor">|</span>
+  </div>
+</section>
+
+
+
+  <!-- Surprise Boxes --> 
+<section class="surprises">
+  <h2>🎁 Open Your Surprises 🎁</h2>
+  <div class="box">🎁</div>
+  <div class="box">🎁</div>
+  <div class="box">🎁</div>
+</section>
+
+  <!-- Final Wish -->
+  <section class="final">
+    <h1>💖 Happy Birthday! 💖</h1>
+    <p>I love you more every day 🎂✨</p>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
